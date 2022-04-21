@@ -1,0 +1,82 @@
+:root {
+    --primary: orange;
+    --secondary: red;
+    --tertiary: yellow;
+}
+
+.Landing {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 50vh;
+    background-image: url('../../public/rocks0.jpeg');
+}
+
+.LandingImage {
+    position: absolute;
+    height: 100%;
+}
+
+.LandingText {
+margin: auto;
+margin-left: 30px;
+font-size: 50px;
+/* width: 40%; */
+text-align: left;
+color: white;
+}
+
+.LandingSearchContainer {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+}
+
+.LandingSearchInput {
+    background-color: white;
+    width: 50vw;
+}
+
+.LandingSearchButton {
+    background-color: var(--secondary);
+    width: 20vw;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: yellow;
+    
+}
+
+
+.ImageGallery {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    background-color: var(--primary);
+    width: 100%;
+}
+
+@media only screen and (max-width:600px) {
+    .ImageGallery {
+        flex-direction: column;
+        width: 100vw;
+    }
+    .LandingSearchContainer {
+        display: flex;
+        flex-direction: column;
+        height: 100px;
+        gap: 10px;
+    }
+    .LandingSearchInput, .LandingSearchButton{
+        width: 80vw;
+        height: 45px;
+    }
+}

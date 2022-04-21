@@ -1,0 +1,35 @@
+.ImageCard {
+    background-color: var(--tertiary);
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.ImageCardImage {
+    /* aspect-ratio: 16/9; */
+    object-fit: cover;
+    height: 300px;
+}
+
+
+
+.ImageCardTextContainer {
+    margin-top: auto;
+    height: 20%;
+    padding-bottom: 10px;
+}
+
+.ImageCardPrimaryText, .ImageCardSecondaryText {
+    margin: 0;
+    text-align: left;
+    margin-left: 10px;
+}
+
+@media only screen and (max-width:600px) {
+    .ImageCard {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
