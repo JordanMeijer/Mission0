@@ -1,7 +1,8 @@
 :root {
-    --primary: orange;
-    --secondary: red;
-    --tertiary: yellow;
+    --primary: #85653c;
+    --secondary: #5a5349;
+    --tertiary: #9a9d96;
+    --fourth: black
 }
 
 .Landing {
@@ -12,18 +13,35 @@
     background-image: url('../../public/rocks0.jpeg');
 }
 
-.LandingImage {
-    position: absolute;
-    height: 100%;
+
+.LandingTextContainer {
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    position: relative;
+    width: auto;
+    margin-right: auto;
 }
 
+
 .LandingText {
-margin: auto;
-margin-left: 30px;
-font-size: 50px;
-/* width: 40%; */
-text-align: left;
-color: white;
+    margin: auto;
+    margin-left: auto;
+    font-size: 50px;
+    text-align: left;
+    color: black;
+    font-weight: bold;
+    z-index: 1;
+    /* text-shadow: -2px -2px 0 var(--fourth), 2px -2px 0 var(--fourth), -2px 2px 0 var(--fourth), 2px 2px 0 var(--fourth); */
+}
+
+.LandingTextBackground {
+    position: absolute;
+    background-color: var(--tertiary);
+    height: 100%;
+    width: 100%;
+    z-index: 0.25;
+    opacity: 75%;
 }
 
 .LandingSearchContainer {
@@ -47,18 +65,21 @@ color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: yellow;
-    
+    color: var(--tertiary);
+
 }
 
 
 .ImageGallery {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 30px;
     padding-top: 50px;
+    padding-bottom: 25px;
     margin-left: auto;
     margin-right: auto;
+
     justify-content: center;
     background-color: var(--primary);
     width: 100%;
@@ -69,13 +90,16 @@ color: white;
         flex-direction: column;
         width: 100vw;
     }
+
     .LandingSearchContainer {
         display: flex;
         flex-direction: column;
         height: 100px;
         gap: 10px;
     }
-    .LandingSearchInput, .LandingSearchButton{
+
+    .LandingSearchInput,
+    .LandingSearchButton {
         width: 80vw;
         height: 45px;
     }

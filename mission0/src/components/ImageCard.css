@@ -1,12 +1,12 @@
 .ImageCard {
     background-color: var(--tertiary);
-    width: 25vw;
+    width: max(20vw, 400px);
     display: flex;
     flex-direction: column;
     
 }
 
-.ImageCardImage {
+.ImageCard-Image {
     /* aspect-ratio: 16/9; */
     object-fit: cover;
     height: 300px;
@@ -14,9 +14,9 @@
 
 
 
-.ImageCardTextContainer {
+.ImageCard-TextContainer {
     margin-top: auto;
-    height: 20%;
+    height: 50px;
     padding-bottom: 10px;
 }
 
